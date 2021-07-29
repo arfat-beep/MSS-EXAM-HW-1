@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+/*============================= menu design======================== */
+nav {
+    width: 90%;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+nav .logo {
+    width: 22%;
+}
+
+nav .logo a {
+    width: 100%;
+    font-size: 3rem;
+    text-align: center;
+    display: block;
+    padding: 2rem 3rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2rem;
+    font-size: 4rem;
+
+}
+
+nav .menu,
+nav .logo,
+nav .nav-button {
+    display: inline-block;
+}
+
+nav .menu {
+    width: 52%;
+    text-align: center;
+}
+
+nav .menu ul li {
+    display: inline-block;
+
+}
+
+nav .menu ul li a {
+
+    padding: 3rem 1rem;
+    font-size: 2rem;
+    color: rgba(206, 206, 206, 0.678);
+}
+
+nav .menu ul li a:hover {
+    color: #fff;
+}
+
+nav .nav-button {
+    width: 22%;
+    text-align: center;
+}
+
+nav .nav-button a {
+    padding: 1.2rem 2rem;
+    background: rgb(214, 51, 92);
+    border-radius: 3rem;
+    font-size: 2rem;
+}
+
+/* ==================== hero section ======================= */
+.hero-section {
+    background-image: url("images/img-12\).jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    color: #fff;
+}
+
+.hero-section .hero-content {
+    background: linear-gradient(to left, rgba(168, 28, 224, 0.418), rgba(16, 103, 216, 0.459));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero-section .hero-content div {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero-header h1 {
+    font-size: 5rem;
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+.hero-section .hero-content .hero-para p {
+    font-size: 2rem;
+}
+
+.hero-section .hero-content .hero-play {
+    margin-top: 3rem;
+}
+
+/* =================================== service section ============================== */
+.service-section,
+.section-price {
+    width: 90%;
+    margin: 0 auto 5rem;
+}
+
+.section-team .container,
+.section-price .container,
+.service-section .container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header {
+    width: 60%;
+    margin: 4rem 0;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding: 2rem 0;
+    position: relative;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: .5rem;
+    margin-bottom: 3rem;
+}
+
+.header h1::before {
+    width: 30%;
+    content: '';
+    position: absolute;
+    background-color: orangered;
+    bottom: 0;
+    left: 50%;
+    height: 2px;
+    transform: translateX(-50%);
+    border-radius: 30px;
+}
+
+.header p {
+    color: rgba(0, 0, 0, 0.493);
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+/* ============================== cards ================================= */
+.cards {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.cards .card {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    transition: all .5s ease-in-out;
+}
+
+.cards .card:hover {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+
+}
+
+.cards .card:hover .logo {
+    background-color: orangered;
+
+}
+
+.cards .card .logo {
+    width: 70px;
+    height: 70px;
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.164);
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: all .5s ease-in-out;
+}
+
+.cards .card .logo img {
+    width: 60%;
+
+}
+
+.cards .card .card-header h1 {
+    margin: 3rem 0;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.cards .card .card-text p {
+    width: 70%;
+
+    margin: 1rem auto;
+    text-align: center;
+    font-size: 1.6rem;
+    color: rgba(0, 0, 0, 0.438);
+    line-height: 2.2rem;
+}
+
+/* ===========================features-seciton ========================= */
+.features-seciton .container+.container-second {
+    width: 100%;
+    padding: 4rem 0;
+    background-color: rgba(0, 0, 0, 0.061);
+}
+
+.features-seciton .container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.features-seciton .container .container-left,
+.features-seciton .container .container-right {
+    width: 47%;
+    display: inline-block;
+}
+
+.features-seciton .container .container-left>div {
+    margin: 3rem 0;
+    width: 70%;
+}
+
+.features-seciton .container .container-left .feature-header h2 {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.features-seciton .container .container-left .feature-para p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: rgba(0, 0, 0, 0.548);
+    text-align: justify;
+}
+
+.features-seciton .container .container-left .feature-list ul li {
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.548);
+}
+
+.features-seciton .container .container-left .feature-list ul li::before {
+    content: "\2022";
+    color: red;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 3rem;
+    width: 30px;
+}
+
+.features-seciton .container .container-left .feature-button {
+    margin-top: 4rem;
+}
+
+.features-seciton .container .container-left .feature-button a {
+    padding: 1rem 2.5rem;
+    background-color: orangered;
+    font-size: 1.4rem;
+    border-radius: .3rem;
+}
+
+.features-seciton .container .container-right img {
+    width: 100%;
+}
+
+.features-seciton .container-second {
+    background-image: url("images/bg-pattern.png"), url("images/img-12\).jpg");
+    background-repeat: no-repeat;
+    background-position: bottom, center;
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+.features-seciton .container-second .bg-overlay {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+    background: linear-gradient(to right, #512da8, #711e72);
+
+}
+
+.features-seciton .container-second .feature-second {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    position: relative;
+    padding-bottom: 4rem;
+}
+
+.features-seciton .container-second .feature-second h1 {
+    font-size: 3rem;
+}
+
+.features-seciton .container-second .feature-second p {
+    font-size: 1.4rem;
+}
+
+.features-seciton .container-second .feature-second a {
+    font-size: 1.8rem;
+    margin: 2rem 0 2rem 0;
+    transition: all .5s ease-in-out;
+    color: #000;
+    background-color: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: .5rem;
+}
+
+.features-seciton .container-second .feature-second a:hover {
+    margin: 1rem 0 3rem 0;
+}
+
+/* ==================================== price section ====================================== */
+.section-price .container:nth-child(2) {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.section-price .container .price-box {
+    width: 25%;
+    padding: 3rem;
+    text-align: center;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.253);
+    margin: 2rem 0;
+    transition: all .5s ease-in-out;
+    border-radius: 5px;
+}
+
+.section-price .container .price-box:hover {
+    margin: 0 0 4rem 0;
+}
+
+.section-price .container .price-box p {
+    margin: 3rem 0;
+    font-size: 1.2rem;
+}
+
+.section-price .container .price-box p.tag {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.section-price .container .price-box p.price {
+    font-size: 4rem;
+}
+
+.section-price .container .price-box p.date {
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.513);
+    font-size: 1.2rem;
+}
+
+.section-price .container .price-box .price-border {
+    width: 100%;
+    height: 1px;
+    margin: 5rem 0;
+    background-color: rgba(0, 0, 0, 0.123);
+}
+
+.section-price .container .price-box p strong {
+    color: orangered;
+}
+
+.section-price .container .price-box a {
+    text-transform: capitalize;
+    font-size: 2rem;
+    padding: 1rem 1.5rem;
+    background: orangered;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 4rem 0;
+    transition: all .5s ease-in-out;
+}
+
+.section-price .container .price-box a:hover {
+    margin: 3rem 0 5rem 0;
+}
+
+/* ============================== section team =============================== */
+.teams {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.teams .team {
+    width: 20%;
+    padding: 2rem;
+    text-align: center;
+    margin: 2rem 0;
+    transition: all .5s ease-in-out;
+    display: inline-block;
+
+}
+
+.teams .team:hover {
+    margin: 1rem 0 3rem 0;
+}
+
+.teams .team img {
+    width: 100%;
+}
+.teams .team h3{
+    margin: 1.5rem;
+}
+.teams .team .team-hr{
+    width: 100%;
+    height: 2px;
+    margin-top: 1rem;
+    background-color: rgba(0, 0, 0, 0.178);
+}
